@@ -1,7 +1,5 @@
-module.exports = function(app){
-    var bodyParser = require('body-parser')
-    var urlencodedParser = bodyParser.urlencoded({extended:false})
-
+module.exports = async function(app){
+    
     app.get('/',(req,res)=>{
         res.render('index')
     })

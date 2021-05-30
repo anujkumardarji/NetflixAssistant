@@ -31,7 +31,10 @@ $(document).ready(function() {
   });
   
   //this is to set the default value 
-  $('#aBtnGroup button[value="Free"]').click();
+  var statusVar = document.getElementById('selectedVal').innerHTML;
+  console.log(statusVar)
+  
+  $('#aBtnGroup button[value='+statusVar+']').click();
     
 })
 

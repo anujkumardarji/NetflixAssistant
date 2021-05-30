@@ -22,7 +22,7 @@
           </nav>
 
         <div class="jumbotron bg-dark text-white" style="margin-top: 1%;">
-            <h1 class="display-4">Hello, Mate!</h1>
+            <h1 class="display-4">Hello, Mate!  <%= status[1].item %>  </h1>
             <p class="lead">This is Netflix Assistant.</p>
             <hr class="my-4">
             <p>Please select the user name.</p>
@@ -36,7 +36,7 @@
                 <span class="selectedValue"></span>
                 </button>
                 <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Anuj</a></li>
+                      <li><a class="dropdown-item" href="#" selected>Anuj</a></li>
                       <li><a class="dropdown-item" href="#">Kapil</a></li>
                       <li><a class="dropdown-item" href="#">Manish</a></li>
                       <li><a class="dropdown-item" href="#">Krunal</a></li>
@@ -47,11 +47,19 @@
             
 
             <div id="aBtnGroup" class="btn-group" style="padding-left: 1%;">
-                <button type="button" value="Free" class="btn btn-secondary">Free</button>
-                <button type="button" value="Occupied" class="btn btn-secondary">Occupied</button> 
+               
+
+                
+                    
+                <button type="button" value="free" class="btn btn-secondary  ">Free</button>
+
+                <button type="button" value="occupied" class="btn btn-secondary">Occupied</button> 
+             
+                 
               </div>
             
-            <div><p>Current Status :  <span id="selectedVal"></span></p></div>
+            <div><p>Current Status :   <span id="selectedVal"> <%= status[0].item %></span></p></div>
+            <div><p><span id="selectedBy"> <%= status[0].item %> </span>BY :  <%= status[1].item %></p></div>
         </p>
         </div>
 
